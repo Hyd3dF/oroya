@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oroya | Web Tasarım & Mobil Uygulama – Profesyonel Web Sitesi Tasarımı</title>
+  <meta name="description" content="Oroya — işletmelere özel profesyonel web sitesi tasarımı, mobil uyumlu tasarım ve React Native mobil uygulama geliştirme. Hızlı teslim, uygun fiyat. oroya.xyz" />
+  <meta name="keywords" content="web tasarım, web sitesi tasarımı, profesyonel web sitesi, mobil uyumlu site, React Native, mobil uygulama, kurumsal web sitesi, oroya, oroya.xyz, ucuz web sitesi, web tasarım fiyatları" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Oroya – oroya.xyz" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="geo.region" content="TR" />
+  <meta name="geo.placename" content="Türkiye" />
+  <meta name="language" content="Turkish" />
+  <link rel="canonical" href="https://oroya.xyz/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:url" content="https://oroya.xyz/" />
+  <meta property="og:site_name" content="Oroya" />
+  <meta property="og:title" content="Oroya | Web Tasarım & Mobil Uygulama – Profesyonel Web Sitesi Tasarımı" />
+  <meta property="og:description" content="İşletmenize özel modern, hızlı ve profesyonel web sitesi tasarımı. React Native mobil uygulama geliştirme. Oroya ile markanızı dijitalde öne çıkarın." />
+  <meta property="og:image" content="https://oroya.xyz/photo.jpeg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="1000" />
+  <meta property="og:image:alt" content="Oroya – Profesyonel Web Tasarım" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Oroya | Profesyonel Web Tasarım & Mobil Uygulama" />
+  <meta name="twitter:description" content="İşletmenize özel modern web sitesi ve mobil uygulama. Hızlı teslim, uygun fiyat." />
+  <meta name="twitter:image" content="https://oroya.xyz/photo.jpeg" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://oroya.xyz" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>O</text></svg>" />
+
+  <!-- JSON-LD Schema — LocalBusiness + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://oroya.xyz/#business",
+        "name": "Oroya",
+        "alternateName": "Oroya Web Tasarım",
+        "url": "https://oroya.xyz",
+        "email": "oroya21@icloud.com",
+        "description": "İşletmelere özel profesyonel web sitesi tasarımı, mobil uyumlu tasarım ve React Native mobil uygulama geliştirme hizmetleri.",
+        "foundingDate": "2021",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Türkiye"
+        },
+        "priceRange": "₺₺",
+        "knowsAbout": ["Web Tasarım", "Mobil Uygulama", "React Native", "JavaScript", "SEO"],
+        "sameAs": ["https://oroya.xyz"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://oroya.xyz/#service",
+        "name": "Profesyonel Web Sitesi Tasarımı",
+        "provider": {"@id": "https://oroya.xyz/#business"},
+        "description": "İşletmeler için modern, hızlı ve mobil uyumlu web sitesi tasarımı. Başlangıç paketi 2.250 TL'den başlıyor.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Başlangıç Paketi",
+            "price": "2250",
+            "priceCurrency": "TRY"
+          },
+          {
+            "@type": "Offer",
+            "name": "Standart Paket",
+            "price": "3250",
+            "priceCurrency": "TRY"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://oroya.xyz/#website",
+        "url": "https://oroya.xyz",
+        "name": "Oroya",
+        "description": "Profesyonel Web Tasarım ve Mobil Uygulama",
+        "publisher": {"@id": "https://oroya.xyz/#business"},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://oroya.xyz/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Oroya</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Hakkımızda</a></li>
+        <li><a href="#services">Hizmetler</a></li>
+        <li><a href="#pricing">Fiyatlar</a></li>
+        <li><a href="#contact" class="nav-cta">İletişim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="photo.jpeg" alt="Oroya – Web Tasarım Uzmanı" class="hero-photo" loading="eager" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="hero-text">
+        <span class="hero-eyebrow">Profesyonel Web Çözümleri</span>
+        <h1 class="hero-title">İşletmenizi<br /><span class="accent">Dijitalde Öne Çıkarıyorum</span></h1>
+        <p class="hero-desc">Markanıza özel modern, hızlı ve mobil uyumlu web siteleri tasarlıyorum. Sade ve etkili tasarımla profesyonel bir dijital varlık oluşturuyorum.</p>
+        <div class="hero-actions">
+          <a href="mailto:oroya21@icloud.com?subject=Web Sitesi Teklif Talebi" class="btn btn-primary">Teklif Al</a>
+          <a href="#services" class="btn btn-ghost">Hizmetleri İncele</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-eyebrow">Hakkımızda</span>
+          <h2 class="section-title">4 Yıllık Deneyim,<br /><span class="accent">Gerçek Sonuçlar</span></h2>
+          <p>4 yıldır yazılım geliştiriyorum. Web siteleri, modern arayüzler ve mobil uygulamalar konusunda deneyim sahibiyim. İşletmelerin dijital dünyada güçlü bir yer edinmesi için çalışıyorum.</p>
+          <p>React Native ile iOS ve Android uygulama geliştirme yapıyorum. Hem web hem mobil tarafta çözüm sunabildiğim için projeler uçtan uca teslim ediliyor.</p>
+          <div class="about-tags">
+            <span class="tag">Web Tasarım</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Mobil Uygulama</span>
+            <span class="tag">UI / UX</span>
+            <span class="tag">SEO</span>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Yıl Deneyim</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Tamamlanan Proje</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Platform (Web + Mobil)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">7/24</span>
+              <span class="stat-label">Destek</span>
+            </div>
+          </div>
+          <div class="skills-block">
+            <div class="skills-title">Teknoloji Yetkinlikleri</div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="60"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">HTML &amp; CSS</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">React Native</span>
+                <span class="skill-pct">55%</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="55"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">10%</span>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Hizmetler</span>
+        <h2 class="section-title">Neler Sunuyorum?</h2>
+        <p class="section-sub">İşletmenizin ihtiyaçlarına uygun kapsamlı web çözümleri.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>İşletme Web Sitesi</h3>
+          <p>Firmanızı en iyi şekilde tanıtan kurumsal ve profesyonel web siteleri.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg>
+          </div>
+          <h3>Mobil Uyumlu Tasarım</h3>
+          <p>Her ekranda kusursuz görünen, telefon ve tablette tam uyumlu tasarımlar.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Modern Arayüz Tasarımı</h3>
+          <p>Sade, minimal ve çarpıcı kullanıcı arayüzleri. İlk izlenim kalıcı olsun.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg>
+          </div>
+          <h3>Tanıtım / Kurumsal Sayfa</h3>
+          <p>Markanızı en etkili biçimde anlatan prestijli tanıtım sayfaları.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Hızlı ve Sade Çözümler</h3>
+          <p>Kısa sürede teslim, hızlı yükleme ve gereksiz karmaşıklık olmadan.</p>
+        </div>
+        <div class="service-card service-cta-card">
+          <h3>Projeniz var mı?</h3>
+          <p>Size özel çözüm için hemen iletişime geçelim.</p>
+          <a href="mailto:oroya21@icloud.com?subject=Teklif Talebi" class="btn btn-primary btn-sm">Teklif Al</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Fiyatlandırma</span>
+        <h2 class="section-title">Güçlü Paketler,<br />Net Fiyatlar</h2>
+        <p class="section-sub">Sınırlı süreli lansman indirimiyle şimdi başlayın.</p>
+        <div class="pricing-timer-label">
+          <span class="timer-dot"></span>
+          Lansman indirimi aktif — kaçırmayın
+        </div>
+      </div>
+      <div class="pricing-grid">
+
+        <!-- BAŞLANGIÇ -->
+        <div class="pricing-card">
+          <div class="pricing-discount-badge">%50 İndirim</div>
+          <div class="pricing-name">Başlangıç</div>
+          <div class="pricing-old-price">₺4.500</div>
+          <div class="pricing-price"><span class="currency">₺</span>2.250</div>
+          <div class="pricing-period">tek seferlik · hemen teslim</div>
+          <ul class="pricing-features">
+            <li>Tek sayfalık site</li>
+            <li>Mobil uyumlu tasarım</li>
+            <li>İletişim bölümü</li>
+            <li>Temel SEO ayarları</li>
+            <li>Bekleti yok — hemen başlar</li>
+            <li>7 gün içinde teslim</li>
+          </ul>
+          <a href="mailto:oroya21@icloud.com?subject=Başlangıç Paketi Teklif" class="btn btn-outline">Teklif Al</a>
+        </div>
+
+        <!-- STANDART -->
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-badge">En Popüler</div>
+          <div class="pricing-discount-badge">%50 İndirim</div>
+          <div class="pricing-name">Standart</div>
+          <div class="pricing-old-price">₺6.500</div>
+          <div class="pricing-price"><span class="currency">₺</span>3.250</div>
+          <div class="pricing-period">tek seferlik · hemen teslim</div>
+          <ul class="pricing-features">
+            <li>Çok sayfalı site</li>
+            <li>Özel tasarım</li>
+            <li>Gelişmiş SEO</li>
+            <li>Hız optimizasyonu</li>
+            <li>İletişim &amp; blog sayfası</li>
+            <li>Bekleti yok — öncelikli sıra</li>
+            <li>10 gün içinde teslim</li>
+          </ul>
+          <a href="mailto:oroya21@icloud.com?subject=Standart Paket Teklif" class="btn btn-primary">Teklif Al</a>
+        </div>
+
+        <!-- KURUMSAL / ENTERPRISE -->
+        <div class="pricing-card pricing-enterprise">
+          <div class="pricing-enterprise-glow"></div>
+          <div class="pricing-discount-badge pricing-discount-warm">%20 Özel İndirim</div>
+          <div class="pricing-name">Kurumsal</div>
+          <div class="pricing-price-custom">Teklife Göre</div>
+          <div class="pricing-period">tam kapsamlı · özel altyapı</div>
+          <div class="enterprise-waitlist-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Bekleti listesiyle alınıyor
+          </div>
+          <ul class="pricing-features">
+            <li>Tüm özel proje kapsamı</li>
+            <li>Ayrılmış sunucu altyapısı</li>
+            <li>Tam dedicated hosting</li>
+            <li>Yüksek trafiğe hazır mimari</li>
+            <li>E-ticaret &amp; CMS entegrasyonu</li>
+            <li>7/24 öncelikli destek hattı</li>
+            <li>Süresiz bakım &amp; güncelleme</li>
+          </ul>
+          <a href="mailto:oroya21@icloud.com?subject=Kurumsal Paket Teklif" class="btn btn-enterprise">Bekleti Listesine Katıl</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Neden Oroya?</span>
+        <h2 class="section-title">Fark Yaratan Detaylar</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Güvenilir Teslimat</h3>
+          <p>Belirlenen sürede, söz verilen kalitede teslim. Gecikme yok.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3>Müşteri Odaklı</h3>
+          <p>Her detay sizin için düşünülür. Geri bildirimleriniz önceliklidir.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Hızlı Siteler</h3>
+          <p>Optimize edilmiş, hızlı açılan siteler. Ziyaretçi kaybetmezsiniz.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Temiz Kod</h3>
+          <p>Bakımı kolay, genişletilebilir ve düzenli kod yapısı.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>SEO Uyumlu</h3>
+          <p>Google'da görünür olmak için temel SEO en iyi uygulamaları uygulanır.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Satış Sonrası Destek</h3>
+          <p>Teslimattan sonra da yanınızdayım. Sorularınız karşılıksız kalmaz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-centered">
+        <span class="section-eyebrow">İletişim</span>
+        <h2 class="section-title">Projenizi Konuşalım</h2>
+        <p class="contact-lead">Fikrinizi paylaşın, size en uygun çözümü birlikte belirleyelim.<br />Ücretsiz ön görüşme için hemen yazın.</p>
+        <div class="contact-cards">
+          <a href="mailto:oroya21@icloud.com?subject=Web Sitesi Teklif Talebi" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span class="contact-label">E-posta</span>
+            <span class="contact-value">oroya21@icloud.com</span>
+          </a>
+          <a href="https://oroya.xyz" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <span class="contact-label">Web</span>
+            <span class="contact-value">oroya.xyz</span>
+          </a>
+        </div>
+        <a href="mailto:oroya21@icloud.com?subject=Web Sitesi Teklif Talebi" class="btn btn-primary btn-lg">E-posta Gönder</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo">Oroya</span>
+          <p>Modern web çözümleriyle işletmenizi dijitalde büyütün.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">Hakkımızda</a>
+          <a href="#services">Hizmetler</a>
+          <a href="#pricing">Fiyatlar</a>
+          <a href="#contact">İletişim</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Oroya. Tüm hakları saklıdır.</p>
+        <p>
+          <a href="mailto:oroya21@icloud.com">oroya21@icloud.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://oroya.xyz">oroya.xyz</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
